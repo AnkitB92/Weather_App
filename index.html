@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- major 1 -->
+  <div class="container">
+    <!-- sub major title -->
+    <h1 class="app-title">Weather App</h1>
+
+    <div class="wrapper">
+      <!-- sub major 1 -->
+      <div class="input-box">
+        <input id="user-input" type="text" placeholder="Enter city">
+        <button id="search-btn">Search</button>
+      </div>
+
+      <!-- sub major 2 -->
+      <div class="card">
+        <!-- sub 2 -->
+        <div class="location-info">
+          <p id="curr-location"></p>
+        </div>
+
+        <!-- content 2 -->
+        <div class="display-info">
+          <div id="weather" class="weather-container">
+            <img src="https://placehold.co/64">
+            <h3 id="city-temp">temp</h3>
+          </div>
+          <h3 id="city-time">City time</h3>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./script.js"></script>
+</body>
+
+</html>

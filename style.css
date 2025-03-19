@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body,
+html {
+  background-color: hsl(0, 0%, 10%);
+  color: white;
+  min-height: 100vh;
+  width: 100%;
+  align-content: center;
+  justify-items: center;
+  font-size: 16px;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 10px 15px;
+}
+
+input:hover,
+button:hover {
+  filter: brightness(1.2);
+}
+
+.container {
+  background-color: rgb(60, 0, 125);
+  height: 500px;
+  width: 100%;
+  max-width: 600px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+
+.app-title {
+  background-color: rgb(255, 0, 60);
+  border-radius: 5px;
+  height: 50px;
+  text-align: center;
+  align-content: center;
+}
+
+.wrapper {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-box {
+  height: 40px;
+  display: flex;
+}
+
+.input-box>input {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 100%;
+}
+
+.input-box>button {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: thistle;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.location-info {
+  font-size: 20px;
+  padding: 5px 15px;
+  height: 50px;
+  min-height: fit-content;
+  background-color: rgb(66, 7, 174);
+  border-radius: 5px;
+  align-content: center;
+
+}
+
+.display-info {
+  display: flex;
+  background-color: #8f0867;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.display-info>h3 {
+  flex: 1;
+  align-content: center;
+  text-align: center;
+  background: #07726d;
+}
+
+.weather-container {
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 1px;
+  flex: 1;
+}
+
+
+.weather-container>img {
+  background-color: hsl(271, 97%, 35%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  object-fit: cover;
+  padding: 5px 10px;
+  height: 50px;
+  width: 50px;
+}
+
+.weather-container>h3 {
+  background-color: hsl(271, 97%, 35%);
+  align-content: center;
+  text-align: center;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 70px;
+}
+
+@media screen and (max-width: 300px) {
+  .input-box {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+  }
+
+  .input-box>button,
+  .input-box>input {
+    border-radius: 10px;
+  }
+
+  .display-info {
+    flex-direction: column;
+  }
+
+  .display-info>h3 {
+    flex: 0 1 auto;
+    height: 60px;
+  }
+
+  .location-info {
+    height: 60px;
+  }
+
+}
