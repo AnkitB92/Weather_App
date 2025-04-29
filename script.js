@@ -29,8 +29,9 @@ search.addEventListener('click', () => getWeather())
 // AVOID EXPOSURE TO GIT PUSH
 
 async function fetchData(city) {
-
-  // const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=${YOUR_API_KEY}&q=${city}&aqi=yes`);
+  // const base_url = 'http://api.weatherapi.com/v1'
+  // const req_url = `${base_url}/current.json?key=${API_KEY}&q=${city}`
+  // const response = await fetch(req_url);
   // return await response.json();
 
   // remove the code below and use above code in line: 33, 34
